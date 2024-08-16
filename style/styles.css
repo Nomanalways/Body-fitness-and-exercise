@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+.play{
+}          
+/* shared styles */
+.text-color{
+    color: white;
+}
+.btn-container{
+    display: flex;
+}
+/* nav related styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    /* margin-top: 40px; */
+}
+/* nav-hamburger-menu */
+.fa-bars{
+    color: white;
+}
+.list-link{
+    color: white;
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+.fit{
+    color: tomato;
+    font-size: 36px;
+    font-family: inter;
+    font-style: italic;
+    font-weight: 800;
+}
+.nav-links{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    color:rgba(255, 255, 255, 0.1);
+    align-items: center;
+    width: 350px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 100px;
+}
+.nav-hamburger-menu{
+    display: none;
+}
+.list-item{
+    list-style: none;
+    margin-right: 45px;
+}
+.list-link{
+    text-decoration: none;
+}
+#home{
+    border: 1px solid;
+    border-radius: 40px;
+    border: none;
+    padding: 3px;
+    color:rgb(255, 255, 255);
+    background-color: #E6533C;
+}
+/* banner related styles */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner img{
+    width: 100%;
+}
+.banner-heading{
+    max-width: 520px;
+    font-family: inter;
+    font-size: 78px;
+    font-weight: 900;
+    color: #FFFFFF;
+    height: 270px;
+}
+.banner-text{
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 520px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.shape{
+    font-family: 'Miama',sans-serif;
+}
+/* banner image related styles */
+.image-container{
+    position: relative;
+}
+/* banner card related styles */
+.fa-circle, .fa-circle-play{
+    color: tomato;
+    font-size: 20px;
+}
+.card1{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 340px;
+    right: 180px;
+    border: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10%);
+    background: rgba(173, 164, 164, 0.048);
+}
+.card-number1{
+    font-family: inter;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+.card-text1{
+    font-family: inter;
+    color: white;
+}
+
+/* Run section related styles */
+.run-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.run{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1060px;
+    max-height: 370px;
+    background-color: #222222;
+}
+.run img{
+    width: 366px;
+    height: 312px;
+}
+.run-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.run-heading{
+    font-size: 40px;
+    font-weight: 900;
+    max-width: 440px;
+    font-family: inter;
+    color: #FFFFFF;
+    line-height: 120%;
+}
+.run-image{
+    margin-top: 30px;
+    margin: 30px 30px 30px auto;
+    border-radius: 18px;
+}
+.run-text{
+    font-size: 14px;
+    font-family: inter;
+    max-width: 440px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.Join{
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 600;
+    border:none;
+    letter-spacing: 0px;
+    background-color: #E6533C;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 16px 70px;
+}
+.Download{
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    background-color:rgba(20, 7, 7, 0.027);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 16px 70px;
+}
+/* collage image related styles */
+.collage-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.collage-section img{
+    width: 100%;
+    height: 100%;
+}
+.image-content{
+    display: flex;
+    border: 1px solid;
+    max-width: 1060px;
+    height: 190px;
+}
+.exercise1{
+    width: 295px;
+    height: 190px;
+    background: url(/images/exercise1.jpg);
+    background-size: cover;
+    position: relative;
+}
+.image-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 255, 210, 0.5);
+}
+.ex1-name{
+    position: absolute;
+    top: 157px;
+    left: 5%;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.exercise2{
+    width: 470px;
+    height: 190px;
+    background: url(/images/exercise2.png);
+    background-size: cover;
+    position: relative;
+}
+.image-overlay2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.3);
+}
+.ex2-name{
+    position: absolute;
+    top: 10%;
+    left: 31px;
+    font-family: inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);;
+}
+.exercise3{
+    position: relative;
+    width: 295px;
+    height: 190px;
+    background: url(/images/exercise3.png);
+    background-size: cover;
+
+}
+.image-overlay3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.ex3-name{
+    position: absolute;
+    bottom: 15%;
+    left: 20px;
+    font-family: inter;
+    font-size: 14px;
+    font-weight: 500;
+    color:rgb(255, 255, 255);;
+}
+.exercise4{
+    position: relative;
+    width: 400px;
+    height: 190px;
+    background: url(/images/exercise4.png);
+    background-size: cover;
+}
+.image-overlay4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.ex4-name{
+    position: absolute;
+    left: 210px;
+    top: 20px;
+    font-size: 14px;
+    font-weight: 500px;
+    font-family: inter;
+    color: rgb(255, 255, 255);
+}
+.exercise5{
+    width: 300px;
+    height: 190px;
+    background: url(/images/exercise5.jpg);
+    background-size: cover;
+    position: relative;
+}
+.image-overlay5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(66, 255, 0, 0.3);
+}
+.ex5-name{
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    font-family: inter;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.exercise6{
+    width: 360px;
+    height: 190px;
+    background: url(/images/exercise6.jpg);
+    background-size: cover;
+    position: relative;
+}
+.image-overlay6{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 71, 255, 0.3);
+}
+.ex6-name{
+    position: absolute;
+    bottom: 10%;
+    left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inter;
+    color: rgb(255, 255, 255);
+}
+/* table related styles */
+table{
+    border-collapse: collapse;
+}
+th{
+    border: 1px solid;
+    width: 150px;
+    padding: 15px;
+}
+td{
+    border: 1px solid;
+    width: 150px;
+    margin-right: 20px;
+}
+.text{
+    padding: 10px;
+ }
+ .info{
+     width: 200px;
+ }
+ /* table section related styles */
+ .table-input-container{
+    display: flex;
+    gap: 30px;
+ }
+ /* input related styles */
+ #opt{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+.text{
+    display: flex;
+    margin: 0 20px;
+}
+#opt{
+    width: 361px;
+    height: 30px;
+    font-size: 10px;
+}
+.input-container{
+    display: flex;
+    gap: 10px;
+}
+.container{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 8px;
+}
+.container2{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 8px;
+}
+.row{
+    width: 170px;
+    height: 25px;
+}
+#Weight{
+    width: 165px;
+    height: 25px;
+}
+.gender{
+    width: 170px;
+    height: 31px;
+    margin-bottom: 10px;
+}
+.calculate{
+    font-family: inter;
+    font-size: 14px;
+    font-weight: 600;
+    border:none;
+    letter-spacing: 0px;
+    background-color: #E6533C;
+    border-radius: 45px;
+    color: #FFFFFF;
+    padding: 14px 40px;
+    margin-top: 10px;
+}
+/* meet our team related styles */
+.meet-image-container img{
+    width: 100%;
+    height: 100%;
+}
+.meet-image-container{
+    border: 1px solid;
+    width: 1060px;
+    height: 500;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.trainer{
+    border-radius: 20px;
+}
+.Jerome{
+    position: relative;
+}
+.meet-name1{
+    position: absolute;
+    top: 90%;
+    left: 40px;
+    bottom: 100px;
+   
+}
+
+/* card related styles */
+
+.bnr-btn{
+    margin-bottom: 466px;
+}
+/* header related styles */
+.header-bg{
+    background-image: linear-gradient(to top, #000000, #111011, #1c1b1b, #272525, #322f2f, #322f2f, #322f2f, #322f2f, #272525, #1c1b1b, #111011, #000000);
+}
+/* footer related styles */
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-list{
+    font-family: inter;
+    list-style: none;
+    font-size:18px;
+}
+.footer-description{
+    max-width: 400px;
+    font-family: inter;
+}
+.footer-heading{
+    font-size: 30px;
+    font-family: inter;
+    font-weight: 700;
+}
+/* Small device responsive */
+@media screen and (max-width:576px) {
+    .nav-hamburger-menu{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        
+    }
+    .btn-container{
+        gap: 15px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .Join{
+    font-family: inter;
+    font-size: 12px;
+    font-weight: 600;
+    border:none;
+    letter-spacing: 0px;
+    background-color: #E6533C;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 13px 50px;
+    }
+    .Download{
+    font-family: inter;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    background-color:rgba(20, 7, 7, 0.027);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 13px 50px;
+    }
+    .banner-heading{
+    max-width: 320px;
+    font-family: inter;
+    font-size: 60px;
+    font-weight: 900;
+    color: #FFFFFF;
+    height: 270px;
+    }
+    .navbar{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    }
+}
+
+
