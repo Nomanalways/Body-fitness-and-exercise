@@ -208,7 +208,7 @@
 .exercise1{
     width: 295px;
     height: 190px;
-    background: url(/images/exercise1.jpg);
+    background: url(../images/exercise1.jpg);
     background-size: cover;
     position: relative;
 }
