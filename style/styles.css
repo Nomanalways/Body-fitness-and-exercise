@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
+main{
+    background-color: #1c1b1b;
+}
 .play{
 }          
 /* shared styles */
 .text-color{
     color: white;
+}
+.text-align{
+    text-align: center;
+}
+/* table shared styles */
+.tab-head-text{
+    font-family: inter;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.line-height{
+    line-height: 70%;
 }
 .btn-container{
     display: flex;
@@ -14,7 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1440px;
+    max-width: 1066px;
     margin: 0 auto;
     /* margin-top: 40px; */
 }
@@ -32,7 +48,7 @@
 .fit{
     color: tomato;
     font-size: 36px;
-    font-family: inter;
+    font-family:inter;
     font-style: italic;
     font-weight: 800;
 }
@@ -71,8 +87,7 @@
 .banner{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1440px;
+    max-width: 1066px;
     margin: 0 auto;
 }
 .banner img{
@@ -85,13 +100,37 @@
     font-weight: 900;
     color: #FFFFFF;
     height: 270px;
+    line-height: 120%;
 }
 .banner-text{
     font-family: inter;
     font-size: 15px;
     font-weight: 400;
-    max-width: 520px;
+    max-width: 490px;
     color: rgba(255, 255, 255, 0.5);
+}
+.Join{
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 600;
+    border:none;
+    letter-spacing: 0px;
+    background-color: #E6533C;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 16px 70px;
+    margin-right: 10px;
+}
+.Download{
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    background-color:rgba(20, 7, 7, 0.027);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 16px 70px;
 }
 .shape{
     font-family: 'Miama',sans-serif;
@@ -105,12 +144,34 @@
     color: tomato;
     font-size: 20px;
 }
+.fa-play{
+    color: white;
+    position: absolute;
+    right: 395px;
+    top: 60%;
+}
 .card1{
     display: flex;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    top: 340px;
-    right: 180px;
+    top: 430px;
+    right: 260px;
+    width: 170px;
+    height: 80px;
+    border-radius: 15px;
+    border: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10%);
+    background: rgba(173, 164, 164, 0.048);
+}
+.card2{
+    position: absolute;
+    top: 130px;
+    right: 0%;
+    width: 150px;
+    height: 80px;
+    border-radius: 15px;
     border: none;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10%);
@@ -122,11 +183,66 @@
     font-weight: 800;
     color: white;
 }
+.card-number2{
+    font-family: inter;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
 .card-text1{
     font-family: inter;
     color: white;
 }
-
+.card-text2{
+    font-family: inter;
+    color: white;
+}
+/* Change habbit related styles */
+.change-content{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid; */
+    width: 1066px;
+    height: 470px;
+    margin: 0 auto;
+}
+.circle-img{
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.habbit-img{
+    border-radius: 50%;
+}
+.change{
+    font-size: 48px;
+    color: #FFFFFF;
+    font-family: inter;
+    font-weight: 900;
+    text-align: center;
+}
+.change-description{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: inter;
+    font-weight: 400;
+    text-align: center;
+}
+.img-heading{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: inter;
+    font-weight:600;
+    line-height: 20%;
+   
+}
+.img-description{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: inter;
+    font-weight: 400;
+}
 /* Run section related styles */
 .run-section{
     max-width: 1440px;
@@ -138,6 +254,7 @@
     gap: 60px;
     max-width: 1060px;
     max-height: 370px;
+    margin: 100px auto;
     background-color: #222222;
 }
 .run img{
@@ -148,6 +265,13 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+/* .run{
+    display: flex;
+} */
+ .run-title{
+    max-width:300px;
+    margin: 0 60px;
+ }
 .run-heading{
     font-size: 40px;
     font-weight: 900;
@@ -168,47 +292,34 @@
     color: #FFFFFF;
     font-weight: 400;
 }
-.Join{
-    font-family: inter;
-    font-size: 16px;
-    font-weight: 600;
-    border:none;
-    letter-spacing: 0px;
-    background-color: #E6533C;
-    border-radius: 40px;
-    color: #FFFFFF;
-    padding: 16px 70px;
-}
-.Download{
-    font-family: inter;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    background-color:rgba(20, 7, 7, 0.027);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 40px;
-    color: #FFFFFF;
-    padding: 16px 70px;
-}
 /* collage image related styles */
-.collage-section{
-    max-width: 1440px;
-    margin: 0 auto;
+.training-heading{
+    font-family: inter;
+    font-weight: 900;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 0%;
 }
-.collage-section img{
-    width: 100%;
-    height: 100%;
+.training-description{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+
 }
 .image-content{
     display: flex;
     border: 1px solid;
     max-width: 1060px;
+    margin: 0 auto;
     height: 190px;
 }
 .exercise1{
     width: 295px;
     height: 190px;
-    background: url(images/.exercise1.png);
+    background: url(/images/.exercise1.png);
     background-size: cover;
     position: relative;
 }
@@ -231,7 +342,7 @@
 .exercise2{
     width: 470px;
     height: 190px;
-    background: url(images/exercise2.png);
+    background: url(/images/exercise2.png);
     background-size: cover;
     position: relative;
 }
@@ -342,6 +453,7 @@
 /* table related styles */
 table{
     border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 th{
     border: 1px solid;
@@ -354,6 +466,10 @@ td{
     margin-right: 20px;
 }
 .text{
+    font-family: inter;
+    font-weight:400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
     padding: 10px;
  }
  .info{
@@ -380,6 +496,12 @@ td{
     height: 30px;
     font-size: 10px;
 }
+.table-input-container{
+    border: 3px solid;
+    max-width: 1060px;
+    margin: 100px auto;
+    height: 200px;
+}
 .input-container{
     display: flex;
     gap: 10px;
@@ -399,6 +521,7 @@ td{
 .row{
     width: 170px;
     height: 25px;
+    background: #E6533C;
 }
 #Weight{
     width: 165px;
@@ -427,12 +550,27 @@ td{
     height: 100%;
 }
 .meet-image-container{
-    border: 1px solid;
     width: 1060px;
-    height: 500;
+    margin: 0 auto;
+    height: 200;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+.meet-heading{
+    font-family: inter;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #FFFFFF;
+    line-height: 20%;
+    text-align: center;
+}
+.meet-description{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
 }
 .trainer{
     border-radius: 20px;
@@ -441,13 +579,87 @@ td{
     position: relative;
 }
 .meet-name1{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
     position: absolute;
-    top: 90%;
-    left: 40px;
-    bottom: 100px;
+    top: 80%;
+    left: 30px;
+    bottom: 90px;
    
 }
-
+.cameron{
+    position: relative;
+}
+.meet-name2{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 80%;
+    left: 30px;
+    bottom: 90px;
+}
+.darrel{
+    position: relative;
+}
+.meet-name3{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 80%;
+    left: 30px;
+    bottom: 90px;
+}
+.dianne{
+    position: relative;
+}
+.meet-name4{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 80%;
+    left: 30px;
+    bottom: 90px;
+}
+.cody{
+    position: relative;
+}
+.meet-name5{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 80%;
+    left: 30px;
+    bottom: 90px;
+}
+.theresa{
+    position: relative;
+}
+.meet-name6{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 80%;
+    left: 30px;
+    bottom: 90px;
+}
+.trainer{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 13px;
+    color: aliceblue;
+}
 /* card related styles */
 
 .bnr-btn{
@@ -459,36 +671,77 @@ td{
 }
 /* footer related styles */
 .footer-content{
+    width: 1060px;
+    margin: 700px auto;
     display: flex;
     justify-content: space-around;
 }
 .footer-list{
     font-family: inter;
+    font-weight: 400;
     list-style: none;
-    font-size:18px;
+    font-size:20px;
+    color: #FFFFFF;
+}
+#fitness{
+    line-height: 30%;
 }
 .footer-description{
     max-width: 400px;
     font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 110%;
 }
 .footer-heading{
     font-size: 30px;
     font-family: inter;
     font-weight: 700;
+    color: #FFFFFF;
+    line-height: 90%;
+
+}
+/* horizontal related styles */
+hr{
+    width: 1060px;
+}
+.copy-right{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
 }
 /* Small device responsive */
 @media screen and (max-width:576px) {
+    /* banner related styles */
     .nav-hamburger-menu{
         display: block;
     }
     .nav-links{
         display: none;
     }
+    .navbar{
+        max-width: 380px;
+        margin: 0 auto;
+    }
     .banner{
         flex-direction: column;
         
     }
+    .banner-heading{
+        max-width: 380px;
+        margin: 0 auto;
+        font-size: 65px;
+    }
+    .banner-text{
+        max-width: 390px;
+        margin: 0 auto;
+    }
     .btn-container{
+        max-width: 420px;
+        margin: 0 auto;
         gap: 15px;
         flex-direction: row;
         justify-content: center;
@@ -531,6 +784,87 @@ td{
     max-width: 500px;
     margin: 0 auto;
     }
+    .play{
+        display: none;
+    }
+    .image-container{
+        position: relative;
+    }
+    .card2{
+        position: absolute;
+        right: 100px;
+    }
+    /* Change your habbit related styles */
+    .change-content{
+        flex-direction: column;
+        max-width: 450px;
+        margin: 0 auto;
+        height: 1166px;
+    }
+    .circle-img{
+        flex-direction: column;
+        /* justify-content: center; */
+        justify-content: center;
+        align-items: center;
+    }
+    /* Run section related styles */
+    .run{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        max-width: 450px;
+        max-height: 1000px;
+        /* margin: 100px auto; */
+        background-color: #222222;
+    }
+    .run img{
+        width: 350px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    /* collage image related styles start */
+    .training-heading{
+        font-family: inter;
+        font-weight: 900;
+        font-size: 32px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        line-height: 0%;
+    
+}
+.exercise3,.exercise6{
+    display: none;
+}
+.exercise1{
+        width: 290px;
+        height: 190px;
+}
+.exercise2{
+        width: 340px;
+        height: 190px;
+}
+.exercise4{
+        width: 370px;
+        height: 190px;
+}
+.exercise6{
+        width: 350px;
+        height: 190px;
+}
+/* End */
+/* meet our team related styles */
+/* horizontal related styles */
+/* meet related styles */
+.meet-image-container{
+    width: 500px;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+}
+.meet-image-container img{
+    width: 100%;
+    height: 100%;
+
 }
 
-
+}
