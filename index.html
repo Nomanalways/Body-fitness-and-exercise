@@ -31,7 +31,9 @@
             <div class="image-container">
                 <img src="images/Images 2.png" alt="">
                 <div class="play"><i class="fa-solid fa-play"></i></div>
-                <button class="card1"><div><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle-play"></i></div>
+                <button class="card1"><div class="circle"><i class="fa-solid fa-circle"></i>
+                    <div class="circle-play"><i class="fa-solid fa-circle-play"></i></div>
+                </div>
                     <div><span class="card-number1">300+</span><br><span class="card-text1">Video tutorial</span></div>
                 </button>
                 <button class="card2">
@@ -118,6 +120,7 @@
                 <div class="table-container">
                     <table>
                         <thead>
+                            <h2 class="BMI">BMI Calculator Chart</h2>
                             <tr>
                                 <th><div class="tab-head-text">BMI</div></th>
                                 <th><div class="tab-head-text">Weight Status</div></th>
@@ -140,6 +143,8 @@
                       </table>
                 </div>
                 <div class="input-content">
+                    <h2 class="cal-bmi">Calculate Your BMI</h2>
+                        <p class="believe-fitness">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
                     <div class="input-container">
                     <div class="container">
                         <div><input class="row" type="text" placeholder="Height/cm"></div>
@@ -147,14 +152,17 @@
                     </div>
                     <div class="container2">
                         <div><input id="Weight" class="row" type="text" placeholder="Weight/kg"></div>
-                        <div><select class="gender" name="" id="">
-                            <option id="text" value="name">Sex</option>
-                        </select></div>
+                        <div class="select-box">
+                            <select class="opt-text">
+                            <option>Sex</option>
+                        </select>
+                    </div>
                     </div>
                 </div>
-                <select>
+                <div class="select-box2">
+                    <select class="select2 opt-text ">
                     <option>Select an activity factor</option>
-                    </select>
+                    </select></div>
                     <br><button class="calculate">Calculate</button>
                 </div>
             </div>
@@ -203,7 +211,7 @@
                     <li class="footer-list">App Design</li>
                 </div>
             </div>
-            <hr><p class="copy-right">All right reserved @Fitness 2024</p>
+            <hr><p class="copy-right">All right reserved: &copy;Fitness 2024</p>
         </footer>
     </main>
 </body>

@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
 main{
-    background-color: #1c1b1b;
-}
-.play{
-}          
+    background-color: rgb(8, 8, 8);
+}      
 /* shared styles */
 .text-color{
     color: white;
@@ -37,6 +35,12 @@ main{
 /* nav-hamburger-menu */
 .fa-bars{
     color: white;
+}
+.circle{
+    display: block;
+}
+.circle-play{
+    display: none;
 }
 .list-link{
     color: white;
@@ -142,7 +146,7 @@ main{
 /* banner card related styles */
 .fa-circle, .fa-circle-play{
     color: tomato;
-    font-size: 20px;
+    font-size: 30px;
 }
 .fa-play{
     color: white;
@@ -254,6 +258,7 @@ main{
     gap: 60px;
     max-width: 1060px;
     max-height: 370px;
+    border-radius: 15px;
     margin: 100px auto;
     background-color: #222222;
 }
@@ -319,7 +324,7 @@ main{
 .exercise1{
     width: 295px;
     height: 190px;
-    background: url(/images/.exercise1.png);
+    background: url(../images/exercise1.jpg);
     background-size: cover;
     position: relative;
 }
@@ -451,6 +456,11 @@ main{
     color: rgb(255, 255, 255);
 }
 /* table related styles */
+.table-section{
+    max-width: 1490px;
+    height: 460px;
+    background-color: hsl(0, 0%, 15%);
+}
 table{
     border-collapse: collapse;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -459,17 +469,19 @@ th{
     border: 1px solid;
     width: 150px;
     padding: 15px;
+    color:rgba(255, 255, 255, 0.1);
 }
 td{
     border: 1px solid;
     width: 150px;
     margin-right: 20px;
+    color:rgba(255, 255, 255, 0.1);
 }
 .text{
     font-family: inter;
     font-weight:400;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
     padding: 10px;
  }
  .info{
@@ -481,26 +493,75 @@ td{
     gap: 30px;
  }
  /* input related styles */
- #opt{
-    width: 300px;
+.select-box{
+    position: relative;
+}
+select{
+    width: 172px;
     height: 30px;
-    border-radius: 5px;
-    
+    appearance: none;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: 1px solid;
+    outline: none;
+    font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    background-color: #504f4f;
+}
+.select-box::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid rgba(255, 255, 255, 0.349);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+    transform: rotate(45deg);
+    right: 7%;
+    top: 30%;
+}
+.select-box2{
+    position: relative;
+}
+.select2{
+    width: 357px;
+    height: 30px;
+    margin-top: 8px;
+    appearance: none;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+
+}
+.select-box2::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid rgba(255, 255, 255, 0.308);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+    transform: rotate(45deg);
+    right: 4%;
+    top: 42%;
+}
+.opt-text{
+    color: rgba(255, 255, 255, 0.39);
 }
 .text{
     display: flex;
     margin: 0 20px;
 }
-#opt{
-    width: 361px;
-    height: 30px;
-    font-size: 10px;
-}
 .table-input-container{
-    border: 3px solid;
+    display: flex;
+    gap: 190px;
+    /* border: 3px solid; */
     max-width: 1060px;
     margin: 100px auto;
-    height: 200px;
+    height: 300px;
 }
 .input-container{
     display: flex;
@@ -521,7 +582,28 @@ td{
 .row{
     width: 170px;
     height: 25px;
-    background: #E6533C;
+    background-color: #504f4f;
+}
+.BMI{
+    font-family: inter;
+    font-weight: 900;
+    font-size: 28px;
+    color: rgb(255, 255, 255);;
+}
+.cal-bmi{
+    font-family: inter;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 60%;
+    color: rgb(255, 255, 255);
+}
+.believe-fitness{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 280px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 90%;
 }
 #Weight{
     width: 165px;
@@ -542,7 +624,7 @@ td{
     border-radius: 45px;
     color: #FFFFFF;
     padding: 14px 40px;
-    margin-top: 10px;
+    margin-top: 3px;
 }
 /* meet our team related styles */
 .meet-image-container img{
@@ -554,8 +636,10 @@ td{
     margin: 0 auto;
     height: 200;
     display: grid;
+    padding: 10px;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 15px;
+    background-color: #504f4f;
 }
 .meet-heading{
     font-family: inter;
@@ -672,7 +756,7 @@ td{
 /* footer related styles */
 .footer-content{
     width: 1060px;
-    margin: 700px auto;
+    margin: 100px auto;
     display: flex;
     justify-content: space-around;
 }
@@ -787,6 +871,13 @@ hr{
     .play{
         display: none;
     }
+    .fa-circle-play{
+        display: block;
+    }
+
+    .circle{
+        display:none;
+    }
     .image-container{
         position: relative;
     }
@@ -854,7 +945,6 @@ hr{
 }
 /* End */
 /* meet our team related styles */
-/* horizontal related styles */
 /* meet related styles */
 .meet-image-container{
     width: 500px;
@@ -866,5 +956,31 @@ hr{
     height: 100%;
 
 }
-
+/* BMI Related styles */
+.table-input-container{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.table-input-container{
+    gap: 90px;
+    border: 3px solid;
+    max-width: 1060px;
+    margin: 100px auto;
+    height: 800px;
+}
+/* footer related styles */
+.footer-content{
+    max-width:390px;
+    flex-direction: column;
+    align-items: last baseline;
+}
+.table-section{
+    max-width: 600px;
+    height: 800px;
+}
+/* horizontal related styles */
+hr{
+    width: 500px;
+}
 }
